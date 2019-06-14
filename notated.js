@@ -1,5 +1,4 @@
 function objFactory({ var1, _var2, _var3 = 6 }) {
-
   const { mixin2: _mixin2, var1: otherVar1 } = anotherObjFactory({
     foo: 1,
     bar: 2,
@@ -37,10 +36,9 @@ function anotherObjFactory({ foo: _mixin1, bar: mixin2 }) {
   });
 }
 
-
 let newObj = objFactory({
-  example2: 2,
-  example1: 1,
+  var1: 2,
+  _var2: 1,
 });
 
 console.log(newObj.NAME);
